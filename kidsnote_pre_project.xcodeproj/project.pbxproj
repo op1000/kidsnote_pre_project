@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B7A573C82C59D3F800F92ADF /* kidsnote_pre_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C72C59D3F800F92ADF /* kidsnote_pre_projectApp.swift */; };
-		B7A573CA2C59D3F800F92ADF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C92C59D3F800F92ADF /* ContentView.swift */; };
+		B7A573C82C59D3F800F92ADF /* KidsnotePreProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C72C59D3F800F92ADF /* KidsnotePreProjectApp.swift */; };
+		B7A573CA2C59D3F800F92ADF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C92C59D3F800F92ADF /* SearchView.swift */; };
 		B7A573CC2C59D3F900F92ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A573CB2C59D3F900F92ADF /* Assets.xcassets */; };
 		B7A573CF2C59D3F900F92ADF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A573CE2C59D3F900F92ADF /* Preview Assets.xcassets */; };
+		B7B9BCF12C59D7970034794D /* BooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCF02C59D7970034794D /* BooksApi.swift */; };
+		B7B9BCF32C59D8250034794D /* BooksDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCF22C59D8250034794D /* BooksDto.swift */; };
+		B7B9BCF62C59E5510034794D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCF52C59E5510034794D /* SearchViewModel.swift */; };
+		B7B9BCFA2C59E60E0034794D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCF92C59E60E0034794D /* SearchBar.swift */; };
+		B7B9BCFD2C59E7460034794D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCFC2C59E7460034794D /* Logger.swift */; };
+		B7B9BCFF2C59E9140034794D /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BCFE2C59E9140034794D /* SearchBarViewModel.swift */; };
+		B7B9BD012C5A11F00034794D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BD002C5A11F00034794D /* ImageView.swift */; };
+		B7B9BD032C5A12150034794D /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BD022C5A12150034794D /* ImageViewModel.swift */; };
+		B7B9BD092C5A313C0034794D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9BD082C5A313C0034794D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7A573C42C59D3F800F92ADF /* kidsnote_pre_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsnote_pre_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7A573C72C59D3F800F92ADF /* kidsnote_pre_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsnote_pre_projectApp.swift; sourceTree = "<group>"; };
-		B7A573C92C59D3F800F92ADF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7A573C72C59D3F800F92ADF /* KidsnotePreProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsnotePreProjectApp.swift; sourceTree = "<group>"; };
+		B7A573C92C59D3F800F92ADF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B7A573CB2C59D3F900F92ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A573CE2C59D3F900F92ADF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7B9BCF02C59D7970034794D /* BooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApi.swift; sourceTree = "<group>"; };
+		B7B9BCF22C59D8250034794D /* BooksDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDto.swift; sourceTree = "<group>"; };
+		B7B9BCF52C59E5510034794D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		B7B9BCF92C59E60E0034794D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B7B9BCFC2C59E7460034794D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B7B9BCFE2C59E9140034794D /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
+		B7B9BD002C5A11F00034794D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B7B9BD022C5A12150034794D /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		B7B9BD072C5A17EC0034794D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B9BD082C5A313C0034794D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +70,12 @@
 		B7A573C62C59D3F800F92ADF /* kidsnote_pre_project */ = {
 			isa = PBXGroup;
 			children = (
-				B7A573C72C59D3F800F92ADF /* kidsnote_pre_projectApp.swift */,
-				B7A573C92C59D3F800F92ADF /* ContentView.swift */,
-				B7A573CB2C59D3F900F92ADF /* Assets.xcassets */,
-				B7A573CD2C59D3F900F92ADF /* Preview Content */,
+				B7B9BD052C5A169D0034794D /* App */,
+				B7B9BCFB2C59E73C0034794D /* Util */,
+				B7B9BCF42C59E4DA0034794D /* UI */,
+				B7B9BCEF2C59D5C00034794D /* Backend */,
+				B7B9BD062C5A17980034794D /* Support */,
+				B7B9BD042C5A16810034794D /* Resources */,
 			);
 			path = kidsnote_pre_project;
 			sourceTree = "<group>";
@@ -65,6 +86,78 @@
 				B7A573CE2C59D3F900F92ADF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7B9BCEF2C59D5C00034794D /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9BCF02C59D7970034794D /* BooksApi.swift */,
+				B7B9BCF22C59D8250034794D /* BooksDto.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		B7B9BCF42C59E4DA0034794D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9BCF82C59E5FD0034794D /* Components */,
+				B7B9BCF72C59E5F50034794D /* Pages */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B7B9BCF72C59E5F50034794D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B7A573C92C59D3F800F92ADF /* SearchView.swift */,
+				B7B9BCF52C59E5510034794D /* SearchViewModel.swift */,
+				B7B9BD082C5A313C0034794D /* MainView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		B7B9BCF82C59E5FD0034794D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9BCF92C59E60E0034794D /* SearchBar.swift */,
+				B7B9BCFE2C59E9140034794D /* SearchBarViewModel.swift */,
+				B7B9BD002C5A11F00034794D /* ImageView.swift */,
+				B7B9BD022C5A12150034794D /* ImageViewModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B7B9BCFB2C59E73C0034794D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9BCFC2C59E7460034794D /* Logger.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B7B9BD042C5A16810034794D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7A573CB2C59D3F900F92ADF /* Assets.xcassets */,
+				B7A573CD2C59D3F900F92ADF /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7B9BD052C5A169D0034794D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7A573C72C59D3F800F92ADF /* KidsnotePreProjectApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7B9BD062C5A17980034794D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B7B9BD072C5A17EC0034794D /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A573CA2C59D3F800F92ADF /* ContentView.swift in Sources */,
-				B7A573C82C59D3F800F92ADF /* kidsnote_pre_projectApp.swift in Sources */,
+				B7B9BCF12C59D7970034794D /* BooksApi.swift in Sources */,
+				B7A573CA2C59D3F800F92ADF /* SearchView.swift in Sources */,
+				B7B9BCFF2C59E9140034794D /* SearchBarViewModel.swift in Sources */,
+				B7B9BCF32C59D8250034794D /* BooksDto.swift in Sources */,
+				B7B9BCF62C59E5510034794D /* SearchViewModel.swift in Sources */,
+				B7B9BCFD2C59E7460034794D /* Logger.swift in Sources */,
+				B7B9BD032C5A12150034794D /* ImageViewModel.swift in Sources */,
+				B7B9BD092C5A313C0034794D /* MainView.swift in Sources */,
+				B7B9BD012C5A11F00034794D /* ImageView.swift in Sources */,
+				B7A573C82C59D3F800F92ADF /* KidsnotePreProjectApp.swift in Sources */,
+				B7B9BCFA2C59E60E0034794D /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +373,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"kidsnote_pre_project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"kidsnote_pre_project/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = CLA95FJCV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kidsnote_pre_project/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,15 +404,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"kidsnote_pre_project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"kidsnote_pre_project/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = CLA95FJCV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kidsnote_pre_project/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
