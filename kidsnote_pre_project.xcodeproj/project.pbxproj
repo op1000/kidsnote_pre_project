@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72BC73A2C5B2A2E0068AD08 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BC7392C5B2A2E0068AD08 /* DetailView.swift */; };
+		B72BC73C2C5B2A340068AD08 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BC73B2C5B2A340068AD08 /* DetailViewModel.swift */; };
+		B72BC7412C5B795A0068AD08 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BC7402C5B795A0068AD08 /* RatingView.swift */; };
+		B72BC7432C5B83800068AD08 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72BC7422C5B83800068AD08 /* SafariView.swift */; };
 		B7A573C82C59D3F800F92ADF /* KidsnotePreProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C72C59D3F800F92ADF /* KidsnotePreProjectApp.swift */; };
 		B7A573CA2C59D3F800F92ADF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A573C92C59D3F800F92ADF /* SearchView.swift */; };
 		B7A573CC2C59D3F900F92ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A573CB2C59D3F900F92ADF /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72BC7392C5B2A2E0068AD08 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B72BC73B2C5B2A340068AD08 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		B72BC7402C5B795A0068AD08 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		B72BC7422C5B83800068AD08 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		B7A573C42C59D3F800F92ADF /* kidsnote_pre_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsnote_pre_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A573C72C59D3F800F92ADF /* KidsnotePreProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsnotePreProjectApp.swift; sourceTree = "<group>"; };
 		B7A573C92C59D3F800F92ADF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -112,6 +120,8 @@
 				B7A573C92C59D3F800F92ADF /* SearchView.swift */,
 				B7B9BCF52C59E5510034794D /* SearchViewModel.swift */,
 				B7B9BD082C5A313C0034794D /* MainView.swift */,
+				B72BC7392C5B2A2E0068AD08 /* DetailView.swift */,
+				B72BC73B2C5B2A340068AD08 /* DetailViewModel.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 				B7B9BCFE2C59E9140034794D /* SearchBarViewModel.swift */,
 				B7B9BD002C5A11F00034794D /* ImageView.swift */,
 				B7B9BD022C5A12150034794D /* ImageViewModel.swift */,
+				B72BC7402C5B795A0068AD08 /* RatingView.swift */,
+				B72BC7422C5B83800068AD08 /* SafariView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B9BCF12C59D7970034794D /* BooksApi.swift in Sources */,
+				B72BC73A2C5B2A2E0068AD08 /* DetailView.swift in Sources */,
 				B7A573CA2C59D3F800F92ADF /* SearchView.swift in Sources */,
 				B7B9BCFF2C59E9140034794D /* SearchBarViewModel.swift in Sources */,
 				B7B9BCF32C59D8250034794D /* BooksDto.swift in Sources */,
@@ -238,9 +251,12 @@
 				B7B9BCFD2C59E7460034794D /* Logger.swift in Sources */,
 				B7B9BD032C5A12150034794D /* ImageViewModel.swift in Sources */,
 				B7B9BD092C5A313C0034794D /* MainView.swift in Sources */,
+				B72BC73C2C5B2A340068AD08 /* DetailViewModel.swift in Sources */,
 				B7B9BD012C5A11F00034794D /* ImageView.swift in Sources */,
 				B7A573C82C59D3F800F92ADF /* KidsnotePreProjectApp.swift in Sources */,
 				B7B9BCFA2C59E60E0034794D /* SearchBar.swift in Sources */,
+				B72BC7432C5B83800068AD08 /* SafariView.swift in Sources */,
+				B72BC7412C5B795A0068AD08 /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
