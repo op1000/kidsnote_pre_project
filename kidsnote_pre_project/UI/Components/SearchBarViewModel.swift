@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import Combine
+
+class SearchBarViewModel: ObservableObject {
+    let searchButtonPressed = PassthroughSubject<String, Never>()
+    
+    init() {
+        bind()
+    }
+}
+
+// MARK: - Private
+
+extension SearchBarViewModel {
+    private func bind() {
+        
+    }
+}
