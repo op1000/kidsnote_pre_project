@@ -18,17 +18,6 @@ enum BooksApi {
         let totalItems: Int
         let items: [SearchedBookInfo]
     }
-    
-    struct BookDetailDto: Decodable {
-        let kind: String
-        let id: String
-        let etag: String
-        let selfLink: String
-        let volumeInfo: VoluemeInfo
-        let layerInfo: LayerInfo
-        let saleInfo: SaleInfo
-        let accessInfo: AccessInfo
-    }
 }
 
 // MARK: - Sub Types
@@ -75,6 +64,7 @@ extension BooksApi {
         let title: String
         let authors: [String]?
         let publisher: String?
+        let publishedDate: String
         let description: String?
         let readingModes: ReadingModes
         let pageCount: Int?
@@ -89,6 +79,8 @@ extension BooksApi {
         let previewLink: String
         let infoLink: String
         let canonicalVolumeLink: String
+        let averageRating: Double?
+        let ratingsCount: Int?
     }
     
     struct ReadingModes: Decodable {

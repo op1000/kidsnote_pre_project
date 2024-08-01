@@ -13,11 +13,20 @@ class SearchViewModel: ObservableObject {
     // MARK: - Types
     
     struct BookInfo: Identifiable {
-        var id = UUID()
+        var id: String
         let thumbnailUrl: String
         let authors: [String]
         let title: String
         let type: String
+        /// detail
+        let pages: Int
+        let stars: Double?
+        let reviews: Int?
+        let description: String
+        let publishedDate: String
+        let publisher: String
+        let previewLink: String
+        let buyLink: String?
     }
     
     enum BookType {
@@ -51,10 +60,19 @@ class SearchViewModel: ObservableObject {
             let tabType = updateStage.currentTab
             let books = items.map { info in
                 BookInfo(
+                    id: info.id,
                     thumbnailUrl: info.volumeInfo.imageLinks.thumbnail,
                     authors: info.volumeInfo.authors ?? [],
                     title: info.volumeInfo.title,
-                    type: (tabType == .ebook) ? "eBook" : "Book"
+                    type: (tabType == .ebook) ? "eBook" : "Book",
+                    pages: info.volumeInfo.pageCount ?? 0,
+                    stars: info.volumeInfo.averageRating,
+                    reviews: info.volumeInfo.ratingsCount,
+                    description: info.volumeInfo.description ?? "",
+                    publishedDate: info.volumeInfo.publishedDate,
+                    publisher: info.volumeInfo.publisher ?? "",
+                    previewLink: info.volumeInfo.previewLink,
+                    buyLink: info.saleInfo.buyLink
                 )
             }
             updateStage.hasSearchHistory = true
@@ -205,11 +223,81 @@ extension SearchViewModel {
 extension SearchViewModel {
     func asHasSerchedBooks() -> Self {
         stateData.ebooks = [
-            SearchViewModel.BookInfo(thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", authors: ["자청"], title: "역행자", type: "eBook"),
-            SearchViewModel.BookInfo(thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", authors: ["자청"], title: "역행자", type: "eBook"),
-            SearchViewModel.BookInfo(thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", authors: ["자청"], title: "역행자", type: "eBook"),
-            SearchViewModel.BookInfo(thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", authors: ["자청"], title: "역행자", type: "eBook"),
-            SearchViewModel.BookInfo(thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", authors: ["자청"], title: "역행자", type: "eBook")
+            SearchViewModel.BookInfo(
+                id: "",
+                thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                authors: ["자청"],
+                title: "역행자",
+                type: "eBook",
+                pages: 0,
+                stars: 0,
+                reviews: 0,
+                description: "",
+                publishedDate: "",
+                publisher: "",
+                previewLink: "http://books.google.co.kr/books?id=MwXLDwAAQBAJ&printsec=frontcover&dq=%EB%82%B4%EA%B0%80&hl=&as_brr=5&cd=2&source=gbs_api",
+                buyLink: "https://play.google.com/store/books/details?id=MwXLDwAAQBAJ&rdid=book-MwXLDwAAQBAJ&rdot=1&source=gbs_api"
+            ),
+            SearchViewModel.BookInfo(
+                id: "",
+                thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                authors: ["자청"],
+                title: "역행자",
+                type: "eBook",
+                pages: 0,
+                stars: 0,
+                reviews: 0,
+                description: "",
+                publishedDate: "",
+                publisher: "",
+                previewLink: "http://books.google.co.kr/books?id=MwXLDwAAQBAJ&printsec=frontcover&dq=%EB%82%B4%EA%B0%80&hl=&as_brr=5&cd=2&source=gbs_api",
+                buyLink: "https://play.google.com/store/books/details?id=MwXLDwAAQBAJ&rdid=book-MwXLDwAAQBAJ&rdot=1&source=gbs_api"
+            ),
+            SearchViewModel.BookInfo(
+                id: "",
+                thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                authors: ["자청"],
+                title: "역행자",
+                type: "eBook",
+                pages: 0,
+                stars: 0,
+                reviews: 0,
+                description: "",
+                publishedDate: "",
+                publisher: "",
+                previewLink: "http://books.google.co.kr/books?id=MwXLDwAAQBAJ&printsec=frontcover&dq=%EB%82%B4%EA%B0%80&hl=&as_brr=5&cd=2&source=gbs_api",
+                buyLink: "https://play.google.com/store/books/details?id=MwXLDwAAQBAJ&rdid=book-MwXLDwAAQBAJ&rdot=1&source=gbs_api"
+            ),
+            SearchViewModel.BookInfo(
+                id: "",
+                thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                authors: ["자청"],
+                title: "역행자",
+                type: "eBook",
+                pages: 0,
+                stars: 0,
+                reviews: 0,
+                description: "",
+                publishedDate: "",
+                publisher: "",
+                previewLink: "http://books.google.co.kr/books?id=MwXLDwAAQBAJ&printsec=frontcover&dq=%EB%82%B4%EA%B0%80&hl=&as_brr=5&cd=2&source=gbs_api",
+                buyLink: "https://play.google.com/store/books/details?id=MwXLDwAAQBAJ&rdid=book-MwXLDwAAQBAJ&rdot=1&source=gbs_api"
+            ),
+            SearchViewModel.BookInfo(
+                id: "",
+                thumbnailUrl: "http://books.google.com/books/content?id=TnSCCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                authors: ["자청"],
+                title: "역행자",
+                type: "eBook",
+                pages: 0,
+                stars: 0,
+                reviews: 0,
+                description: "",
+                publishedDate: "",
+                publisher: "",
+                previewLink: "http://books.google.co.kr/books?id=MwXLDwAAQBAJ&printsec=frontcover&dq=%EB%82%B4%EA%B0%80&hl=&as_brr=5&cd=2&source=gbs_api",
+                buyLink: "https://play.google.com/store/books/details?id=MwXLDwAAQBAJ&rdid=book-MwXLDwAAQBAJ&rdot=1&source=gbs_api"
+            )
         ]
         return self
     }

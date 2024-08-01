@@ -40,7 +40,12 @@ struct SearchView: View {
                                 .padding(.vertical, 16)
                                 .padding(.horizontal, 20)
                             ForEach(viewModel.stateData.ebooks) { book in
-                                BookRow(viewModel: viewModel, info: book)
+                                NavigationLink {
+                                    DetailView(viewModel: DetailViewModel(info: book))
+                                        .id(book.id)
+                                } label: {
+                                    BookRow(viewModel: viewModel, info: book)
+                                }
                             }
                             if !viewModel.stateData.allListLoaded {
                                 HStack(spacing: 0) {

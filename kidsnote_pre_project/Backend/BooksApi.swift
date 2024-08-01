@@ -14,7 +14,7 @@ extension BooksApi {
         static let baseURL = "https://www.googleapis.com"
         static let searchEbook = "/books/v1/volumes?q=%@&startIndex=%@&maxResults=10&filter=ebooks&key=%@"
         static let searchAll = "/books/v1/volumes?q=%@&startIndex=%@&maxResults=10&key=%@"
-        static let detail = "/books/v1/volumes/%@&key=%@"
+        static let detail = "/books/v1/volumes/%@?key=%@"
     }
     
     static func searchBooks(query: String, startIndex: Int, isEbook: Bool) async throws -> SearchBooksDto {
@@ -29,20 +29,6 @@ extension BooksApi {
         BooksApi.logResponseString(data: data)
         
         let result = try JSONDecoder().decode(SearchBooksDto.self, from: data)
-        return result
-    }
-    
-    static func fetchDetail(volumeId: String) async throws -> BookDetailDto {
-        let urlFormat = Constants.baseURL + Constants.detail
-        guard let urlString = String(format: urlFormat, volumeId, Constants.apiKey).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-            throw APIError.invalidURL
-        }
-        guard let url = URL(string: urlString) else {
-            throw APIError.invalidURL
-        }
-        let (data, _) = try await URLSession.shared.data(from: url)
-        BooksApi.logResponseString(data: data)
-        let result = try JSONDecoder().decode(BookDetailDto.self, from: data)
         return result
     }
 }
