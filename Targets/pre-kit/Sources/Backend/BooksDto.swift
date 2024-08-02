@@ -70,7 +70,7 @@ public extension BooksApi {
         public let title: String
         public let authors: [String]?
         public let publisher: String?
-        public let publishedDate: String
+        public let publishedDate: String?
         public let description: String?
         public let readingModes: ReadingModes
         public let pageCount: Int?

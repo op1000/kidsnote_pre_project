@@ -70,7 +70,7 @@ class SearchViewModel: ObservableObject {
                     stars: info.volumeInfo.averageRating,
                     reviews: info.volumeInfo.ratingsCount,
                     description: info.volumeInfo.description ?? "",
-                    publishedDate: info.volumeInfo.publishedDate,
+                    publishedDate: info.volumeInfo.publishedDate ?? "",
                     publisher: info.volumeInfo.publisher ?? "",
                     previewLink: info.volumeInfo.previewLink,
                     buyLink: info.saleInfo.buyLink
@@ -163,6 +163,7 @@ extension SearchViewModel {
                 let response = result.0
                 Task { @MainActor [weak self] in
                     guard let self else { return }
+                    guard response.kind != "error" else { return }
                     await stateData = listData.update(
                         state: stateData,
                         searchText: searchText,
